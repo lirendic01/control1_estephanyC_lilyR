@@ -1,0 +1,24 @@
+{
+    "liveServer.settings.host": "127.0.0.2",
+    "files.autoSave": "afterDelay",
+    "oracledevtools.connections": [
+        {
+            "authenticationType": 2,
+            "dBAPrivilege": "None",
+            "userID": "ADMIN",
+            "passwordSaved": false,
+            "dataSource": "basedatos2024_tpurgent",
+            "connectionType": 1,
+            "tnsAdmin": "c:\\Users\\lilyr\\Downloads\\Wallet_2024\\Wallet_basedatos2024",
+            "walletLocation": "c:\\Users\\lilyr\\Downloads\\Wallet_2024\\Wallet_basedatos2024",
+            "useConnectionCredsFromWalletFile": false,
+            "name": "ADMIN.basedatos2024_tpurgent",
+            "color": "none",
+            "currentSchema": "",
+            "addSettingsScopeToConnectionName": false,
+            "addCurrentSchemaToConnectionName": false,
+            "filters": [],
+            "useCompatibleNamesDirectoryPath": true
+        }
+    ]
+}

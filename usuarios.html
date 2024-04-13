@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<div id="menu"></div>
+<body>
+    <div class="container">
+    
+    <h2>Mantenedor de usuarios</h2>
+    
+        
+        <!-- Campos del formulario -->
+        <div class="col-sm-12 col-md-6">
+            <!-- Tus campos del formulario aquí -->
+        </div>
+    </div>
+
+                <!-- Campo Subscrito -->
+    <form class="row g-3 needs-validation text-start" novalidate>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">       
+                    <div class="mb-3">
+                        <label for="id" class="form-label">ID</label>
+                        <input required placeholder="Ej: 35" 
+                            type="text" class="form-control" 
+                            id="id" name="rut" aria-describedby="idHelp">
+                        <div id="idHelp" class="form-text">
+                            Escriba su id
+                        </div>
+                        <div class="invalid-feedback">
+                            El campo ID es obligatorio
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="tipo-usuario" class="form-label">Tipo de Usuario</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="tipo-usuario" id="cliente" value="cliente">
+                            <label class="form-check-label" for="cliente">Cliente</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="tipo-usuario" id="administrador" value="administrador">
+                            <label class="form-check-label" for="administrador">Administrador</label>
+                        </div>
+                    </div>
+                
+
+                <!-- Campo Nombre -->
+                    <div class="mb-3">
+                        <label for="rut" class="form-label">RUT</label>
+                        <inp required placeholder="Ej: 12.345.678-k" 
+                            type="text" class="form-control" 
+                            id="rut" name="nombre" aria-describedby="rutHelp">
+                        <div id="rutHelp" class="form-text">
+                            Escriba su Rut.
+                        </div>
+                        <div class="invalid-feedback">
+                            El campo RUT es obligatorio
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre</label>
+                        <input required placeholder="Ej: Isaac" 
+                            type="text" class="form-control" 
+                            id="nombre" name="nombre" aria-describedby="nombreHelp">
+                        <div id="nombreHelp" class="form-text">
+                            Escriba su nombre.
+                        </div>
+                        <div class="invalid-feedback">
+                            El campo Nombre es obligatorio
+                        </div>
+                    </div>
+
+                <!-- Campo Apellido -->
+                    <div class="mb-3">
+                        <label for="apellido" class="form-label">Apellido</label>
+                        <input required placeholder="Ej: González" 
+                            type="text" class="form-control" 
+                            id="apellido" name="apellido" aria-describedby="apellidoHelp">
+                        <div id="apellidoHelp" class="form-text">
+                            Escriba su apellido.
+                        </div>
+                        <div class="invalid-feedback">
+                            El campo Apellido es obligatorio
+                        </div>
+                    </div>
+
+                <!-- Campo Correo -->
+                    <div class="mb-3">
+                        <label for="correo" class="form-label">Correo</label>
+                        <input required placeholder="Ej: igonzalez@gmail.com" 
+                            type="email" class="form-control" 
+                            id="correo" name="correo" aria-describedby="correoHelp">
+                        <div id="correoHelp" class="form-text">
+                            Escriba su correo.
+                        </div>
+                        <div class="invalid-feedback">
+                            El campo Correo es obligatorio
+                        </div>
+                    </div>
+
+                
+                    <div class="mb-3">
+                        <label for="direccion" class="form-label">Dirección</label>
+                        <textarea required placeholder="Ej: Calle einstein 543, Recoleta" 
+                            class="form-control" rows="3"
+                            id="direccion" name="direccion" aria-describedby="direccionHelp"></textarea>
+                        <div id="direccionHelp" class="form-text">
+                            Escriba su dirección.
+                        </div>
+                        <div class="invalid-feedback">
+                            El campo Dirección es obligatorio
+                        </div>
+                    </div>
+
+                <!-- Campo Subscrito -->
+                    <div class="mb-3">
+                        <label for="subscrito" class="form-label">Con subscripción</label>
+                        <input type="checkbox" id="subscrito" name="subscrito">
+                        <div id="subscritoHelp" class="form-text">
+                            Deseo subscribirme con un aporte de $3000 mensuales
+                            a la fundacion "Mascotas felices"
+                            y obtener un 5% de descuento en mis compras.
+                        </div>
+                    </div>
+
+                        <div class="mb-3">
+                            <label for="contraseña" class="form-label">Contraseña</label>
+                            <div class="input-group"> <!-- Agregamos un grupo de entrada -->
+                                <input required placeholder="************" 
+                                    type="password" class="form-control" 
+                                    id="contraseña" name="contraseña" aria-describedby="contraseñaHelp">
+                                <button class="btn btn-outline-primary" type="button" id="generar-contraseña">Generar Contraseña</button> <!-- Botón Generar Contraseña -->
+                            </div>
+                            <div id="contraseñaHelp" class="form-text">
+                                Escriba su contraseña.
+                            </div>
+                            <div class="invalid-feedback">
+                                l campo Contraseña es obligatorio
+                            </div>
+                        </div>
+
+
+                
+                
+                        <div class="mb-3">
+                            <button type="button" class="btn btn-success">Guardar</button>
+                            <button type="button" class="btn btn-primary">Nuevo</button>
+                            <button type="button" class="btn btn-danger">Eliminar</button>
+                        </div>
+                </div> 
+
+                
+                
+              <div class="col">
+               <div class="col-sm-12 col-md-6" style="text-align: left;">
+                    <img class="registro_foto reducida" src="img/usuario1.webp" alt="" style="max-width: 300px; max-height: 300px;">
+                </div>
+              </div>
+        
+
+            </div>
+
+        </div>
+                    
+                    <div class="row">
+                        <div class="col">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Tipo Usuario</th>
+                                        <th>RUT</th>
+                                        <th>Nombre</th>
+                                        <th>Apellido</th>
+                                        <th>Correo</th>
+                                        <th>Dirección</th>
+                                        <th>Con Subscripción</th>
+                                        <th>Imagen</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>001</td>
+                                        <td>Cliente</td>
+                                        <td>12.345.678-k</td>
+                                        <td>Isaac</td>
+                                        <td>González</td>
+                                        <td>igonzalez@gmail.com</td>
+                                        <td>Calle Einstein 543, Recoleta</td>
+                                        <td>Si</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>002</td>
+                                        <td>Administrador</td>
+                                        <td>23.456.789-0</td>
+                                        <td>Maria</td>
+                                        <td>Rodriguez</td>
+                                        <td>mrodriguez@hotmail.com</td>
+                                        <td>Avenida Libertad 456, Providencia</td>
+                                        <td>No</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>003</td>
+                                        <td>Cliente</td>
+                                        <td>34.567.890-1</td>
+                                        <td>Juan</td>
+                                        <td>Pérez</td>
+                                        <td>jperez@yahoo.com</td>
+                                        <td>Av. Andrés Bello 789, Las Condes</td>
+                                        <td>Si</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>004</td>
+                                        <td>Administrador</td>
+                                        <td>45.678.901-2</td>
+                                        <td>Ana</td>
+                                        <td>López</td>
+                                        <td>alopez@gmail.com</td>
+                                        <td>Calle Los Cerezos 321, Ñuñoa</td>
+                                        <td>No</td>
+                                        <td>-</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                     </div>
+         </div>
+                    <br>
+
+                       </br> 
+                       
+        <div id="footer"></div>
+                  
+                    <script src="js/script.js"></script>
+                    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </body>
+</html>              
+                    
+                    
+                    
+                   
+                   
