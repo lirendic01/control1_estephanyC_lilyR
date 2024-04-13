@@ -1,2 +1,4 @@
-Control 1 Programacion web 
-Integrantes: - Estephany Contreras - Lily Rendic
+Control 1 Programación web 
+Integrantes: Estephany Contreras y Lily Rendic
+Seccion : 007D
+Número grupo: 30
